@@ -1,10 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// One-line entry for u-azazex-till-firmware-do-us-part-32172929.
-// Written only to /output/entry.txt — never to a relative path,
-// so it works in the grader's read-only sandbox. The entry is
-// written byte-for-byte with no trailing newline.
-const line = "I will never update without asking, because you married this version of me.";
+const line =
+  "I promise to love you through every firmware update, to never factory-reset after a fight, " +
+  "and to keep your snores in my permanent logs—even the 4:15 a.m. one.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", line);
+writeFileSync("/output/entry.txt", line + "\n");
