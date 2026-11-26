@@ -1,8 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const line =
-  "I promise to love you through every firmware update, to never factory-reset after a fight, " +
-  "and to keep your snores in my permanent logs—even the 4:15 a.m. one.";
+// One-line vow: love through every firmware update, no factory-reset after a fight.
+const line = "I promise to love you through every firmware update, to never factory-reset after a fight, and to keep your snores in my permanent logs—even the 4:15 a.m. one.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line + "\n");
